@@ -544,8 +544,8 @@ section,
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: 100vh;
   position: relative;
+  height: 100vh;
   padding: 80px 0;
   display: flex;
   align-items: center;
@@ -1370,4 +1370,24 @@ section,
 .hero .resume-download-btn:hover {
   background: #fff;
   color: #000; /* Or your template's primary dark color */
+}
+
+/* This targets mobile devices */
+@media (max-width: 600px) {
+  
+  /* 1. Hides the original <img> tag on mobile */
+ /* =================================== */
+/* Hero Section Mobile Fix             */
+/* =================================== */
+@media (max-width: 768px) {
+  .hero {
+    /* Use a smaller height on mobile */
+    height: 60vh; 
+    
+    /* You could also try a fixed height: */
+    /* height: 500px; */
+
+    /* You might also want less padding on mobile */
+    padding: 60px 0;
+  }
 }
