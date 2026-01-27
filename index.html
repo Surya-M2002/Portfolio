@@ -149,7 +149,10 @@
 
     <main class="main">
       <section id="hero" class="hero section dark-background">
-        <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="" />
+        <picture>
+          <source srcset="assets/img/heromobbg.jpg" media="(max-width: 768px)" />
+          <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="" />
+        </picture>
 
         <div class="container" data-aos="fade-up" data-aos-delay="100">
           <h2>Surya Murugesan</h2>
@@ -651,10 +654,11 @@
                         </div>
                         <div class="container">
                             <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-                                <li data-filter="*"><strong>All</strong></li>
-                                <li data-filter=".filter-app"><strong>UIUX Projects</strong></li>
-                                <li data-filter=".filter-product"><strong>FullStack Projects</strong></li>
-
+                                <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+                                    <li data-filter="*" class="filter-active" style="font-weight: bold;">All</li>
+                                    <li data-filter=".filter-app" style="font-weight: bold;">UIUX Projects</li>
+                                    <li data-filter=".filter-product" style="font-weight: bold;">FullStack Projects</li>
+                                </ul>
                                 <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
                                     <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
                                         <div class="portfolio-content h-100">

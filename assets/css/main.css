@@ -12,13 +12,16 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font:
+    "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway", sans-serif;
+  --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
+:root {
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #272829; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #050d18; /* Color for headings, subheadings and title throughout the website */
@@ -29,7 +32,7 @@
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #a8a9b4;  /* The default color of the main navmenu links */
+  --nav-color: #a8a9b4; /* The default color of the main navmenu links */
   --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #040b14; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #040b14; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
@@ -154,7 +157,8 @@ h6 {
   transition: all ease-in-out 0.3s;
   overflow-y: auto;
   z-index: 997;
-  border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-right: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .header .profile-img img {
@@ -206,9 +210,8 @@ h6 {
 }
 
 @media (min-width: 1200px) {
-
-  .header~main,
-  .header~#footer {
+  .header ~ main,
+  .header ~ #footer {
     margin-left: 300px;
   }
 }
@@ -331,7 +334,7 @@ h6 {
 
 .navmenu .dropdown a,
 .navmenu .dropdown a:focus {
-  color: --nav-dropdown-color;
+  color: var(--nav-dropdown-color);
 }
 
 .navmenu .dropdown a:hover,
@@ -356,7 +359,7 @@ h6 {
   background-color: rgba(33, 37, 41, 0.1);
 }
 
-.navmenu .dropdown>.dropdown-active {
+.navmenu .dropdown > .dropdown-active {
   display: block;
   background-color: rgba(33, 37, 41, 0.03);
 }
@@ -370,7 +373,8 @@ h6 {
   font-size: 14px;
   padding: 40px 0;
   position: relative;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .footer .copyright p {
@@ -486,11 +490,11 @@ h6 {
   font-weight: 400;
 }
 
-.page-title .breadcrumbs ol li+li {
+.page-title .breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.page-title .breadcrumbs ol li+li::before {
+.page-title .breadcrumbs ol li + li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
@@ -1104,8 +1108,8 @@ section,
   }
 }
 
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
+.contact .php-email-form input[type="text"],
+.contact .php-email-form input[type="email"],
 .contact .php-email-form textarea {
   font-size: 14px;
   padding: 10px 15px;
@@ -1116,19 +1120,19 @@ section,
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
+.contact .php-email-form input[type="text"]:focus,
+.contact .php-email-form input[type="email"]:focus,
 .contact .php-email-form textarea:focus {
   border-color: var(--accent-color);
 }
 
-.contact .php-email-form input[type=text]::placeholder,
-.contact .php-email-form input[type=email]::placeholder,
+.contact .php-email-form input[type="text"]::placeholder,
+.contact .php-email-form input[type="email"]::placeholder,
 .contact .php-email-form textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   color: var(--contrast-color);
   background: var(--accent-color);
   border: 0;
@@ -1137,7 +1141,7 @@ section,
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 25%);
 }
 
@@ -1153,14 +1157,20 @@ section,
   position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: color-mix(in srgb, var(--default-color), transparent 85%);
   opacity: 1;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
 }
 
@@ -1174,7 +1184,8 @@ section,
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
 .portfolio-details .portfolio-info ul {
@@ -1183,7 +1194,7 @@ section,
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
 }
 
@@ -1215,7 +1226,8 @@ section,
   display: block;
   line-height: 1;
   padding: 8px 0 8px 15px;
-  border-left: 3px solid color-mix(in srgb, var(--default-color), transparent 70%);
+  border-left: 3px solid
+    color-mix(in srgb, var(--default-color), transparent 70%);
   margin: 20px 0;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   transition: 0.3s;
@@ -1274,56 +1286,55 @@ section,
   /* Add your styles here */
 }
 
-
 .portfolio-details .col-lg-8 img {
-      /* Add shadow and rounded corners to the main image */
-      border-radius: 8px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    }
+  /* Add shadow and rounded corners to the main image */
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
 
-    .portfolio-details .portfolio-info {
-      /* Turn the info box into a styled card */
-      background: #f8f9fa; /* A light grey background */
-      padding: 25px;
-      border-radius: 8px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-    }
+.portfolio-details .portfolio-info {
+  /* Turn the info box into a styled card */
+  background: #f8f9fa; /* A light grey background */
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
 
-    .portfolio-details .portfolio-info h3 {
-      /* Style the heading inside the info box */
-      font-size: 22px;
-      font-weight: 700;
-      margin-bottom: 20px;
-      padding-bottom: 10px;
-      border-bottom: 2px solid #eee;
-    }
+.portfolio-details .portfolio-info h3 {
+  /* Style the heading inside the info box */
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #eee;
+}
 
-    .portfolio-details .portfolio-info ul {
-      list-style: none;
-      padding: 0;
-      font-size: 15px;
-    }
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
 
-    .portfolio-details .portfolio-info ul li {
-      /* Add spacing between list items */
-      padding-bottom: 15px;
-    }
+.portfolio-details .portfolio-info ul li {
+  /* Add spacing between list items */
+  padding-bottom: 15px;
+}
 
-    .portfolio-details .portfolio-info ul strong {
-      /* Make the labels stand out */
-      color: #0563bb; /* Template accent color */
-      margin-right: 10px;
-    }
+.portfolio-details .portfolio-info ul strong {
+  /* Make the labels stand out */
+  color: #0563bb; /* Template accent color */
+  margin-right: 10px;
+}
 
-    .portfolio-details .portfolio-description {
-      /* Add some space above the description */
-      margin-top: 30px;
-    }
+.portfolio-details .portfolio-description {
+  /* Add some space above the description */
+  margin-top: 30px;
+}
 
-    /* Make all portfolio images equal in size */
+/* Make all portfolio images equal in size */
 .portfolio-content img {
   width: 100%;
-  height: 250px;   /* You can change this height */
+  height: 250px; /* You can change this height */
   object-fit: cover;
   border-radius: 10px;
 }
@@ -1333,12 +1344,12 @@ section,
   overflow: hidden;
   border-radius: 10px;
   background: #fff;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
 }
 
 /* Add consistent gap between portfolio boxes */
 .isotope-container {
-  row-gap: 30px !important;   /* vertical space */
+  row-gap: 30px !important; /* vertical space */
   column-gap: 30px !important; /* horizontal space */
 }
 
@@ -1369,25 +1380,28 @@ section,
 
 .hero .resume-download-btn:hover {
   background: #fff;
-  color: #000; /* Or your template's primary dark color */
+  color: #000;
 }
 
-/* This targets mobile devices */
-@media (max-width: 600px) {
-  
-  /* 1. Hides the original <img> tag on mobile */
- /* =================================== */
-/* Hero Section Mobile Fix             */
-/* =================================== */
 @media (max-width: 768px) {
   .hero {
-    /* Use a smaller height on mobile */
-    height: 60vh; 
-    
-    /* You could also try a fixed height: */
-    /* height: 500px; */
-
-    /* You might also want less padding on mobile */
+    height: 60vh;
     padding: 60px 0;
+  }
+
+  .hero .resume-download-btn {
+    padding: 8px 22px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  section,
+  .section {
+    padding: 40px 0;
+  }
+
+  .portfolio-content img {
+    height: 180px;
   }
 }
