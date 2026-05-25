@@ -590,9 +590,17 @@ section,
   font-size: 26px;
 }
 
-.hero p span {
+.hero p .typed {
+  color:white;
+  font-weight: 700;
   letter-spacing: 1px;
-  border-bottom: 2px solid var(--accent-color);
+}
+
+.typed-cursor {
+  color:white;
+  font-size: 26px;
+  vertical-align: middle;
+  margin-left: 2px;
 }
 
 .hero .social-links {
